@@ -174,7 +174,7 @@ body {
       @media screen and (max-width: 500px) {
 
         .project-title{
-            font-size: 1em;
+            font-size: 1.5em;
         }
         .card-project {
             width: 100%;  
@@ -184,7 +184,7 @@ body {
             color: white;
         }
         .project-description {
-            font-size: 0.5em;
+            font-size: 0.9em;
         }
         .page2 {
             text-align: center;
