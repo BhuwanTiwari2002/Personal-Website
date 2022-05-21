@@ -132,7 +132,7 @@ body {
 @media screen and (max-width: 1000px) {
 
     .project-title{
-        font-size: 0.5em;
+        font-size: 1.5em;
     }
     .card-project {
         width: 80%;  
@@ -142,7 +142,7 @@ body {
         color: white;
     }
     .project-description {
-        font-size: 0.5em;
+        font-size: 1em;
     }
     .page2 {
         text-align: center;
@@ -170,6 +170,48 @@ body {
         padding: 6px 10px;
 
       }
+}
+      @media screen and (max-width: 500px) {
+
+        .project-title{
+            font-size: 1em;
+        }
+        .card-project {
+            width: 100%;  
+        }
+        .hover-project {
+            opacity: 1;
+            color: white;
+        }
+        .project-description {
+            font-size: 0.5em;
+        }
+        .page2 {
+            text-align: center;
+        } 
+        .contact-form-button {
+            margin-left: 100px;
+        }
+        .contact-form{
+            margin: auto;
+            padding: 0 20px;
+            overflow: hidden;
+            font-size: 15px;
+          
+          }
+          .page1 img {
+              width: 70%;
+              height: 70%;
+          }
+          .aboutme {
+            width: 50%;
+            margin-left: 30%;
+            text-align: left;
+        }
+        .form-button {
+            padding: 6px 10px;
+    
+          }
       
 }
 
