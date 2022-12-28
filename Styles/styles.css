@@ -16,6 +16,12 @@ body {
     opacity: 70%;
 }
 
+#threejsModel {
+    width: 800px; 
+    height: 512px;
+    margin: auto;
+}
+
 .personalpicture {
     border-radius: 50%;
 }
