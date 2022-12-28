@@ -134,6 +134,7 @@ body {
     text-align: center;
   }
 
+
     /* When its in a phone screen */
 @media screen and (max-width: 1000px) {
 
@@ -142,6 +143,11 @@ body {
     }
     .card-project {
         width: 80%;  
+    }
+    #threejsModel {
+        width: 500px; 
+        height: 400px;
+        margin: auto;
     }
     .hover-project {
         opacity: 1;
@@ -176,8 +182,15 @@ body {
         padding: 6px 10px;
 
       }
+     
 }
       @media screen and (max-width: 500px) {
+
+        #threejsModel {
+            width: 160px; 
+            height: 160px;
+            margin: auto;
+        }
 
         .project-title{
             font-size: 1.5em;
@@ -185,6 +198,7 @@ body {
         .card-project {
             width: 100%;  
         }
+
         .hover-project {
             opacity: 1;
             color: white;
@@ -218,6 +232,8 @@ body {
             padding: 6px 10px;
     
           }
+
+
       
 }
 

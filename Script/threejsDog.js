@@ -5,7 +5,12 @@ const scene = new THREE.Scene();
         const ambientLighting = new THREE.AmbientLight(0xffffff, 1);
 
         //renderer.setSize(800, 512);
+        addEventListener("resize", (event) => {
+            renderer.setSize(container.offsetWidth, container.offsetHeight);
+        });
         renderer.setSize(container.offsetWidth, container.offsetHeight);
+
+      
         container.appendChild(renderer.domElement);
         //document.body.appendChild(renderer.domElement);
         // Load the GLTF loader
