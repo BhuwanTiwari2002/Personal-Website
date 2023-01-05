@@ -1,29 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 /* Body */
 body {
    margin: 0px;
    padding: 0px;
    background: #f8ede3 !important ;
    width: 100%;
-
+    cursor: url(../Media/customPointer.svg), auto;
 }
 .aboutme {
-    width: 30%;
-    margin-left: 35%;
     text-align: left;
+    font-size: 18px;
+}
+.landing-headline {
+    transform-origin: left;
+    font-size: 4rem;
+    font-weight: 600;
+    fill: #091434;
+    letter-spacing: -0.5px;
+    font-family: 'Poppins', sans-serif;
+    color: #091434;
+
 }
 
-.text-center span{
-    opacity: 70%;
+.navbar-text {
+    transform-origin: left;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    font-family: 'Pacifico', sans-serif;
+    color: black !important;
 }
-
 #threejsModel {
-    width: 800px; 
-    height: 512px;
-    margin: auto;
-}
+    width: 700px; 
+    height: 412px;
+    border-top: #D27D2D solid 2px;
+   
 
-.personalpicture {
-    border-radius: 50%;
+}
+.disclaimer-dog 
+{
+    color: #091434;
+    font-family: 'Poppins', sans-serif;
+
 }
 /* This for the start */
 .checked {
@@ -119,16 +137,16 @@ body {
     box-shadow: 0 0 10px 4px #0dcaf0;
   }
   .form-button {
-    padding: 9px 20px;
-    background-color: #0dcaf0;
+    background-color: #FF923E;    
     border: none;
-    border-radius: 5px;
+    padding: 13px 34px;
+    border-radius: 8px;
     cursor: pointer;
     transition: all 0.5s ease 0s;
     color: black;
   }
   .form-button:hover {
-    background-color: #17b6d6;
+    background-color: #D27D2D;
   }
   #contact-page h4{
     text-align: center;
@@ -144,11 +162,7 @@ body {
     .card-project {
         width: 80%;  
     }
-    #threejsModel {
-        width: 500px; 
-        height: 400px;
-        margin: auto;
-    }
+
     .hover-project {
         opacity: 1;
         color: white;
@@ -186,11 +200,7 @@ body {
 }
       @media screen and (max-width: 500px) {
 
-        #threejsModel {
-            width: 160px; 
-            height: 160px;
-            margin: auto;
-        }
+
 
         .project-title{
             font-size: 1.5em;

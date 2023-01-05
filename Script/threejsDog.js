@@ -1,6 +1,6 @@
 const container = document.getElementById('threejsModel');
 const scene = new THREE.Scene();
-        const camera = new THREE.PerspectiveCamera(65, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 1000);
         const renderer = new THREE.WebGLRenderer();
         const ambientLighting = new THREE.AmbientLight(0xffffff, 1);
 
@@ -27,10 +27,7 @@ const scene = new THREE.Scene();
             // Create a function to update the rotation of the model
             function updateRotation() {
             // Increment the rotation by a small amount
-            gltf.scene.rotation.y += 0.025;
-           // gltf.scene.rotation.z = 2;
-           // gltf.scene.rotation.x += 0.01;
-        // Request the next frame of the animation
+            gltf.scene.rotation.y += 0.01;
         requestAnimationFrame(updateRotation);
         }
 
