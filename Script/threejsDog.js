@@ -1,4 +1,5 @@
-const container = document.getElementById('threejsModel');
+const container = document.getElementById('threejsModel');      
+const preferredColorScheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 const scene = new THREE.Scene();
         const camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 1000);
         const renderer = new THREE.WebGLRenderer();
@@ -6,13 +7,13 @@ const scene = new THREE.Scene();
 
         //renderer.setSize(800, 512);
         addEventListener("resize", (event) => {
-            renderer.setSize(container.offsetWidth, container.offsetHeight);
+            renderer.setSize(window.innerWidth/1.8, window.innerHeight/1.8);
         });
-        renderer.setSize(container.offsetWidth, container.offsetHeight);
-
+        renderer.setSize(window.innerWidth/1.8, window.innerHeight/1.8);
       
         container.appendChild(renderer.domElement);
-        //document.body.appendChild(renderer.domElement);
+
+        
         // Load the GLTF loader
         var loader = new THREE.GLTFLoader();
         scene.add(ambientLighting);
@@ -27,7 +28,7 @@ const scene = new THREE.Scene();
             // Create a function to update the rotation of the model
             function updateRotation() {
             // Increment the rotation by a small amount
-            gltf.scene.rotation.y += 0.01;
+            gltf.scene.rotation.y += 0.025;
         requestAnimationFrame(updateRotation);
         }
 
@@ -47,11 +48,20 @@ const scene = new THREE.Scene();
         camera.position.y = 5;
         camera.position.x = 0;
         renderer.setClearColor('#ffffff');
-
+        
+        //Checks weather if it is dark or light mode on user's device
+         if (preferredColorScheme === 'dark') {
+            scene.background = new THREE.Color('#000000');
+         } else {
+            scene.background = new THREE.Color('#f8ede3');
+        }
+    
         // Set up orbit control
-        //var controls = new THREE.OrbitControls(camera, renderer.domElement);
-        scene.background = new THREE.Color('#f8ede3');
         var controls = new THREE.OrbitControls(camera, renderer.domElement);
+        //This disable's zoom on the 3d model
+        controls.enableZoom = false;
+
+    
         // Render loop
         var animate = function () {
             requestAnimationFrame(animate);
@@ -59,4 +69,4 @@ const scene = new THREE.Scene();
             renderer.render(scene, camera);
         };
         animate();
-        
+            

@@ -3,7 +3,7 @@
 body {
    margin: 0px;
    padding: 0px;
-   background: #f8ede3 !important ;
+   background: #f8ede3 !important;
    width: 100%;
     cursor: url(../Media/customPointer.svg), auto;
 }
@@ -21,7 +21,6 @@ body {
     color: #091434;
 
 }
-
 .navbar-text {
     transform-origin: left;
     font-size: 25px;
@@ -30,19 +29,7 @@ body {
     font-family: 'Pacifico', sans-serif;
     color: black !important;
 }
-#threejsModel {
-    width: 700px; 
-    height: 412px;
-    border-top: #D27D2D solid 2px;
-   
 
-}
-.disclaimer-dog 
-{
-    color: #091434;
-    font-family: 'Poppins', sans-serif;
-
-}
 /* This for the start */
 .checked {
     color: orange;
@@ -54,7 +41,7 @@ body {
   
 .card-project {
     position: relative;
-    width: 30%;
+    width: 40%;
     display: inline-block;
 }
 
@@ -134,7 +121,7 @@ body {
     color: white;
   }
   .contact-form-text:hover{
-    box-shadow: 0 0 10px 4px #0dcaf0;
+    box-shadow: 0 0 10px 4px #D27D2D;
   }
   .form-button {
     background-color: #FF923E;    
@@ -189,13 +176,19 @@ body {
       }
       .aboutme {
         width: 50%;
-        margin-left: 30%;
+        margin-left: 15%;
         text-align: left;
     }
     .form-button {
         padding: 6px 10px;
+        margin-left: 15%;
 
       }
+
+      .landing-headline {
+          margin-left: 15%;
+      }
+
      
 }
       @media screen and (max-width: 500px) {
@@ -243,7 +236,27 @@ body {
     
           }
 
-
-      
 }
 
+@media (prefers-color-scheme: dark) {
+    /* The reason for the !important is to override bootstraps classes for the dark mode*/
+    body {
+      background-color: black !important;
+      color: white !important;
+    }
+    * {
+        color: white !important;
+    }
+    .navbar-text {
+        color: white !important;
+    }
+    .form-button {
+        color: black !important;
+    }
+    hr {
+        color: white !important;
+        opacity: 100%;
+    }
+
+  }
+  
