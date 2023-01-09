@@ -1,17 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 /* Body */
-body {
+body 
+{
    margin: 0px;
    padding: 0px;
    background: #f8ede3 !important;
    width: 100%;
-    cursor: url(../Media/customPointer.svg), auto;
+   cursor: url(../Media/customPointer.svg), auto; 
+   /*cursor: url(../Media/Cursor.png) 3 3,auto;*/
 }
-.aboutme {
+
+.aboutme 
+{
     text-align: left;
-    font-size: 18px;
+    font-size: 20px;
 }
-.landing-headline {
+.landing-headline 
+{
     transform-origin: left;
     font-size: 4rem;
     font-weight: 600;
@@ -21,7 +26,8 @@ body {
     color: #091434;
 
 }
-.navbar-text {
+.navbar-text 
+{
     transform-origin: left;
     font-size: 25px;
     font-weight: 600;
@@ -31,25 +37,30 @@ body {
 }
 
 /* This for the start */
-.checked {
+.checked 
+{
     color: orange;
 }
 
-.main-project-class {
+.main-project-class 
+{
     text-align: center;
 }
   
-.card-project {
+.card-project 
+{
     position: relative;
     width: 40%;
     display: inline-block;
 }
 
-.img-project {
+.img-project 
+{
     display: block;
     width: 100%;
 }
-.hover-project {
+.hover-project 
+{
     position: absolute;
     top: 0;
     left: 0;
@@ -65,20 +76,21 @@ body {
     transition: opacity 0.25s;
 }
 /* This is the animation for text going from down to top */
-.card-project > *{
+.card-project > *
+{
     transform: translateY(20px);
     transition: transform 0.25s;
 }
-.card-project:hover > *{
+.card-project:hover > *
+{
     transform: translateY(0px);
 }
-
-
-.hover-project:hover {
+.hover-project:hover 
+{
     opacity: 1;
 }
-
-.project-title {    
+.project-title 
+{    
     font-size: 1em;
     font-weight: bold;
 }
@@ -88,29 +100,29 @@ body {
     padding-left: 30px;
 }
 
-
 /* Contact Page */
-.contact-page h2{
+.contact-page h2
+{
     text-align: center;
     color: white;
-  }
-  
-  .border {
+}
+.border 
+{
     width: 100px;
     height: -10px;
     background: #24252A;
     margin: 40px auto;
-  
-  }
-  .contact-form{
+}
+.contact-form
+{
     max-width: 600px;
     margin: auto;
     padding: 0 10px;
     overflow: hidden;
     font-size: 20px;
-  
-  }
-  .contact-form-text {
+}
+.contact-form-text 
+{
     display: block;
     width: 100%;
     box-sizing: border-box;
@@ -119,11 +131,13 @@ body {
     background: #111;
     padding: 20px 40px;
     color: white;
-  }
-  .contact-form-text:hover{
+}
+.contact-form-text:hover
+{
     box-shadow: 0 0 10px 4px #D27D2D;
-  }
-  .form-button {
+}
+.form-button 
+{
     background-color: #FF923E;    
     border: none;
     padding: 13px 34px;
@@ -131,129 +145,167 @@ body {
     cursor: pointer;
     transition: all 0.5s ease 0s;
     color: black;
-  }
-  .form-button:hover {
+}
+.form-button:hover 
+{
     background-color: #D27D2D;
-  }
-  #contact-page h4{
+}
+#contact-page h4
+{
     text-align: center;
-  }
+}
 
-
-    /* When its in a phone screen */
-@media screen and (max-width: 1000px) {
-
-    .project-title{
+/* When its in a phone screen */
+@media screen and (max-width: 1000px) 
+  {
+    .project-title
+    {
         font-size: 1.5em;
     }
-    .card-project {
+    .card-project 
+    {
         width: 80%;  
     }
-
-    .hover-project {
+    .hover-project 
+    {
         opacity: 1;
         color: white;
     }
-    .project-description {
+    .project-description 
+    {
         font-size: 1em;
     }
-    .page2 {
+    .page2 
+    {
         text-align: center;
     } 
-    .contact-form-button {
+    .contact-form-button 
+    {
         margin-left: 100px;
     }
-    .contact-form{
+    .contact-form
+    {
         margin: auto;
         padding: 0 20px;
         overflow: hidden;
         font-size: 15px;
       
-      }
-      .page1 img {
-          width: 70%;
-          height: 70%;
-      }
-      .aboutme {
+    }
+    .page1 img 
+    {
+        width: 70%;
+        height: 70%;
+    }
+      .aboutme 
+    {
         width: 50%;
         margin-left: 15%;
         text-align: left;
     }
-    .form-button {
+    .form-button 
+    {
         padding: 6px 10px;
         margin-left: 15%;
 
-      }
-
-      .landing-headline {
-          margin-left: 15%;
-      }
-
-     
-}
-      @media screen and (max-width: 500px) {
-
-
-
-        .project-title{
+    }
+    .landing-headline
+    {
+        margin-left: 15%;
+    } 
+  }
+    @media screen and (max-width: 500px) 
+    {
+        .skills-section h3
+        {
+            margin-bottom: 13% !important;
+        }
+        #threejsModel 
+        {
+            margin-left: 15%;
+        }
+        .project-title
+        {
             font-size: 1.5em;
         }
-        .card-project {
+        .card-project 
+        {
             width: 100%;  
         }
 
-        .hover-project {
+        .hover-project 
+        {
             opacity: 1;
             color: white;
         }
-        .project-description {
+        .project-description 
+        {
             font-size: 0.9em;
         }
-        .page2 {
+        .page2 
+        {
             text-align: center;
         } 
-        .contact-form-button {
+        .contact-form-button 
+        {
             margin-left: 100px;
         }
-        .contact-form{
+        .contact-form
+        {
             margin: auto;
             padding: 0 20px;
             overflow: hidden;
             font-size: 15px;
           
-          }
-          .page1 img {
-              width: 70%;
-              height: 70%;
-          }
-          .aboutme {
+        }
+        .page1 img 
+        {
+            width: 70%;
+            height: 70%;
+        }
+        .aboutme 
+        {
             width: 50%;
             margin-left: 30%;
             text-align: left;
         }
-        .form-button {
+        .form-button 
+        {
             padding: 6px 10px;
-    
-          }
+            margin-left: 15%;
+        }
+        .landing-headline 
+        {
+            margin-left: 15%;
+        }
+        .aboutme 
+        {
+            margin-left: 15%;
+        }
+       
+  }
 
-}
-
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) 
+  {
     /* The reason for the !important is to override bootstraps classes for the dark mode*/
-    body {
+    body 
+    {
       background-color: black !important;
       color: white !important;
     }
-    * {
+    * 
+    {
         color: white !important;
     }
-    .navbar-text {
+    .navbar-text 
+    {
         color: white !important;
     }
-    .form-button {
+    .form-button 
+    {
         color: black !important;
     }
-    hr {
+    hr 
+    {
         color: white !important;
         opacity: 100%;
     }

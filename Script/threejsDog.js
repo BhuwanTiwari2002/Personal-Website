@@ -1,15 +1,23 @@
 const container = document.getElementById('threejsModel');      
 const preferredColorScheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+const mediaQuery500px = window.matchMedia('(max-width: 500px)');
 const scene = new THREE.Scene();
-        const camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 1000);
         const renderer = new THREE.WebGLRenderer();
         const ambientLighting = new THREE.AmbientLight(0xffffff, 1);
 
         //renderer.setSize(800, 512);
         addEventListener("resize", (event) => {
-            renderer.setSize(window.innerWidth/1.8, window.innerHeight/1.8);
+            renderer.setSize(window.innerWidth/2, window.innerHeight/2);
         });
-        renderer.setSize(window.innerWidth/1.8, window.innerHeight/1.8);
+
+        //Checks if the screensize is 500px
+        if (mediaQuery500px.matches) {
+            renderer.setSize(window.innerWidth/1.5, window.innerHeight/1.7);
+        } else {
+            renderer.setSize(window.innerWidth/2, window.innerHeight/2);
+        }
+        
       
         container.appendChild(renderer.domElement);
 
@@ -28,7 +36,7 @@ const scene = new THREE.Scene();
             // Create a function to update the rotation of the model
             function updateRotation() {
             // Increment the rotation by a small amount
-            gltf.scene.rotation.y += 0.025;
+            gltf.scene.rotation.y += 0.015;
         requestAnimationFrame(updateRotation);
         }
 
