@@ -12,6 +12,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="Script/threejsDog.js" defer></script>	
     <script src="Script/glitch-text.js" defer></script>
+    <script src="Script/skills-list.js" defer></script>
+
     <!--<script type="module" src="Scripts/dog.js" defer></script>-->
     <link rel="shortcut icon" href="#"> <!-- Fixes the favicon.ico error-->
 </head>
@@ -67,51 +69,22 @@
               </div>
         </div>   
     </section>
-
     <section class="skills-section">
         <div class="text-center">
             <h3 class="fw-light" style="margin-top: 2%; margin-bottom: 2%; font-size: 35px;">Skills</h3>
             <div class="container">
-                <div class="row">
-                    <div class="col-lg">
-                        <img src="Media/HTML5Icon.png" width="20%">
-                        <h4 class="fw-light">HTML5</h4>
-                        <hr>
-                    </div>
-                    <div class="col-lg">
-                        <img src="Media/CSS3.png" width="20%">
-                        <h4 class="fw-light">CSS3</h4>
-                        <hr>
-                    </div>
-                    <div class="col-lg">
-                        <img src="Media/java.png" width="20%">
-                        <h4 class="fw-light">Java</h4>
-                        <hr>
-                    </div>
+                <div class="row" id="skill-section-row">
+                    <skill-section path="Media/HTML5Icon.png" name="HTML5"></skill-section>
+                    <skill-section path="Media/CSS3.png" name="CSS3"></skill-section>
+                    <skill-section path="Media/java.png" name="Java"></skill-section>
                 </div>
                 <div class="row" style="margin-top: 4%;">
-                    <div class="col-lg">
-                        <img src="Media/cSharp.png" width="20%">
-                        <h4 class="fw-light">C Sharp</h4>
-                        <hr>
-                    </div>
-                    <div class="col-lg">
-                        <img src="Media/github.png" width="20%">
-                        <h4 class="fw-light">Github</h4>
-                        <hr>
-                    </div>
-                    <div class="col-lg">
-                        <img src="Media/AutoDeskInventor.png" width="20%">
-                        <h4 class="fw-light">AutoDesk Inventor</h4>
-                        <hr>
-                    </div>
+                    <skill-section path="Media/cSharp.png" name="C Sharp"></skill-section>
+                    <skill-section path="Media/github.png" name="Github"></skill-section>
+                    <skill-section path="Media/AutoDeskInventor.png" name="AutoDesk Inventor"></skill-section>
                 </div>
             </div>
-       
-            
-
         </div>
-        
     </section>
     <br>
     <!-- End of Skills -->
