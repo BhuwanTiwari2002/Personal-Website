@@ -1,6 +1,5 @@
 window.customElements.define('skill-section', class extends HTMLElement
 {
-    
     constructor()
     {
         super(); //Calling the constructor of the HTMLElement class and not the Skills 
@@ -21,7 +20,5 @@ window.customElements.define('skill-section', class extends HTMLElement
         ColumDiv.appendChild(heading);
         ColumDiv.appendChild(hr);
     }
-   
-
 });
 
