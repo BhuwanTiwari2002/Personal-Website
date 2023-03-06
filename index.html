@@ -13,8 +13,8 @@
     <script src="Script/threejsDog.js" defer></script>	
     <script src="Script/glitch-text.js" defer></script>
     <script src="Script/skills-list.js" defer></script>
+    <script src="Script/custom-button.js" defer></script>
 
-    <!--<script type="module" src="Scripts/dog.js" defer></script>-->
     <link rel="shortcut icon" href="#"> <!-- Fixes the favicon.ico error-->
 </head>
 
@@ -51,15 +51,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg">
-                    
-                    <h1 class="landing-headline"><glitch-text start speed="0.25" duration="800">Hi, my <br> name is Bhuwan.</glitch-text></h1>
+                    <h1 class="landing-headline"><glitch-text start speed="0.25" duration="800">Hi, my name</glitch-text></h1>
+                    <h1 class="landing-headline">is Bhuwan</h1>
                     <span  class="aboutme" style=" opacity: 70%;" class="fs-0.5">Software Developer</span>
                     <p class="aboutme" class="fw-light">I'm a student enrolled in Software Developer Program at Fox Valley Technical
                         College. I have passion for learning, computers, programming and taking leadership roles. </p>
                     <p class="aboutme" class="fw-light">Currently, I am the president of Phi Theta Kappa, an honor society.</p>
-                    <form method="get" action="https://docs.google.com/document/d/1fCvQw6hN8_AN8j04gyTKG7yLTeyYSAfuv7C16q9luNE/edit?usp=sharing">
+                      <form method="get" action="https://docs.google.com/document/d/1fCvQw6hN8_AN8j04gyTKG7yLTeyYSAfuv7C16q9luNE/edit?usp=sharing">
                         <input type="submit" class="form-button " value="View Resume">
-                    </form>
+                    </form> 
                 </div>
                 <div class="col-sm">
                     <div id="threejsModel">
@@ -68,6 +68,69 @@
                 </div>
               </div>
         </div>   
+    </section>                        
+    <!-- Start of Projects -->
+    <section id="projects">
+        <h4 class="fw-light" style="margin-top: 2%; font-size: 35px; text-align: center;">Projects</h4>
+        <p class="fw-light" style="margin-top: 2%; font-size: 20px; text-align: center;">Click on the card to see the project.</p>
+        <div class="container">
+            <div class="box">
+                <!--Box-->
+                <div class="item">
+                    <a href="https://fvtcaitp.org/" target="_blank" class="item_link">
+                        <!--Hover bg-->
+                        <div class="item_bg"></div>
+                        <!--Hover bg-->
+                        <h1 class="item_title">AITP Website</h1>
+                        <p class="item_paragraph">Collaborated with peers to develop, create and test AITP websites using Bootstrap, JavaScript, HTML, and CSS.</p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="https://www.curiosityastronomy.com/" target="_blank" class="item_link">
+                        <!--Hover bg-->
+                        <div class="item_bg"></div>
+                        <!--Hover bg-->
+                        <h1 class="item_title">Curiosity Astronmy</h1>
+                        <p class="item_paragraph">Interactive STEM organization suitable for all ages, locations, and
+                            experience levels! The website was developed using wix.</p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="https://github.com/BhuwanTiwari2002/BT.MoneyTracker" target="_blank" class="item_link">
+                        <div class="item_bg"></div>
+                        <h1 class="item_title">Financial Tracker </h1>
+                        <p class="item_paragraph">I created this project to get similar with C# and ASP.Net.
+                        The goal of the website is have tags and be able to track where your money is being spend. </p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="https://github.com/BhuwanTiwari2002/Personal-Website" target="_blank" class="item_link">
+                        <div class="item_bg"></div>
+                        <h1 class="item_title">Personal Website</h1>
+                        <p class="item_paragraph">This is my web portfolio, which I created using only HTML, CSS & Javascript. I'm actively redesigning the website.
+                        You can check out the code by clicking on the card.
+                        </p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="https://github.com/BhuwanTiwari2002/JavaProjects" target="_blank" class="item_link">
+                        <div class="item_bg"></div>
+                        <h1 class="item_title">Java Projects</h1>
+                        <p class="item_paragraph">I love to code in Java and tackle various data structure problems for fun. 
+                            This repository serves as a place for me to develop my skills in a low-stakes, creative environment. </p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="https://github.com/BhuwanTiwari2002" target="_blank" class="item_link">
+                        <div class="item_bg"></div>
+                        <h1 class="item_title">Github</h1>
+                        <p class="item_paragraph">This is my personal Github. I am currently working
+                            projects that I will be posting to github in the near future.</p>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
     </section>
     <section class="skills-section">
         <div class="text-center">
@@ -87,45 +150,8 @@
         </div>
     </section>
     <br>
-    <!-- End of Skills -->
+        <!-- End of Skills -->
 
-
-    <main id="projects" class="main-project-class">
-        <h4 class="fw-light" style="margin-top: 2%; font-size: 35px;"">Projects</h4>
-        <br>
-        <br>
-
-        <!-- Project Card : Astronomy -->
-        <div class="card-project">
-            <img class="img-project" src="Media/AstronomyV2.png" alt="Astronomy">
-            <div class="hover-project">
-                <div class="project-title">Curiosity Astronmy</div>
-                <p class="project-description">Interactive STEM organization suitable for all ages, locations, and
-                    experience levels! Come explore with us! Contact us for help in starting a STEM club at your own
-                    club or in your own city, and subscribe to our email list or follow us on social media to follow our
-                    blog,
-                    and to be notified of fun, upcoming events that will be conducted online!</p>
-                <form method="get" action="https://www.curiosityastronomy.com/">
-                    <input type="submit" class="form-button " value="Visit Website">
-                </form>
-            </div>
-        </div>
-        <br>
-        <br>
-        <br>
-        <div class="card-project">
-            <img class="img-project" src="Media/GithubV2.jpg" alt="Astronomy">
-            <div class="hover-project">
-                <div class="project-title">Github</div>
-                <p class="project-description">This is my personal Github, I am new to github. I am currently working
-                    projects that
-                    I will be posting to github in the near future.</p>
-                <form method="get" action="https://github.com/BhuwanTiwari2002">
-                    <input type="submit" class="form-button " value="Visit Website">
-                </form>
-            </div>
-    </main>
-    <br>
     <!-- Contact Page -->
     <div id="contact-page">
         <br>
@@ -143,8 +169,6 @@
     </div>
     <br>
     
-  
-
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
         crossorigin="anonymous"></script>
