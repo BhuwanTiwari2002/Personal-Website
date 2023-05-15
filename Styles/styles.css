@@ -22,7 +22,6 @@
 .website-intro-logo {
     position: relative;
     display: inline-block;
-    flex-direction: row;
     opacity: 0;
 }
 
@@ -57,6 +56,7 @@ body
     text-align: left;
     font-size: 20px;
 }
+
 .landing-headline 
 {
     transform-origin: left;
@@ -76,6 +76,27 @@ body
     letter-spacing: -0.5px;
     font-family: 'Pacifico', sans-serif;
     color: black !important;
+}
+
+/* Photography Section */
+.photography-image-track > .photography-image {
+    width: 35vmin;
+    height: 42vmin;
+    object-fit: cover;
+    object-position: 100% center;
+    position: relative;
+    border-radius: 10px;
+}
+
+.photography-image-track {
+    margin-left: 50px;
+    display: flex;
+    gap: 4vmin;
+    left: 50%;
+    top: 50%;
+    transform: translate(0%, -50);
+    max-width: 100%;
+    user-select: none; /* -- Prevent image highlighting -- */
 }
 
 /* Contact Page */
