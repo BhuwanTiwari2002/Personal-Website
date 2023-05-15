@@ -45,6 +45,8 @@ body
    width: 100%;
    cursor: url(../Media/customPointer.svg), auto; 
    font-family: 'Pacifico', sans-serif;
+   overflow-x: hidden;
+
 }
 ::selection
 {
@@ -239,9 +241,6 @@ body
 }
 
 @media only screen and (max-width: 979px) {
-    .photography-section {
-        display: none;
-    }
 	.item {
 		-ms-flex-preferred-size: calc(50% - 30px);
 		flex-basis: calc(50% - 30px);
@@ -252,9 +251,6 @@ body
 }
 
 @media only screen and (max-width: 767px) {
-    .photography-section {
-        display: none;
-    }
 	.container {
 		width: 96%;
 	}
@@ -264,9 +260,6 @@ body
 		-ms-flex-preferred-size: 100%;
 		flex-basis: 100%;
 	}
-    .photography-section {
-        display: none;
-    }
 	.item_title {
 		min-height: 72px;
 		line-height: 1;
@@ -284,9 +277,6 @@ body
 /* When its in a phone screen */
 @media screen and (max-width: 1000px) 
   {
-    .photography-section {
-        display: none;
-    }
     .contact-form-button 
     {
         margin-left: 100px;
