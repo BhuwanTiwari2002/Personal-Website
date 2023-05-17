@@ -43,7 +43,7 @@ body
    padding: 0px;
    background: #f8ede3 !important;
    width: 100%;
-   cursor: url(../Media/customPointer.svg), auto; 
+   /* cursor: url(../Media/customPointer.svg), auto;  */
    font-family: 'Pacifico', sans-serif;
    overflow-x: hidden;
 
