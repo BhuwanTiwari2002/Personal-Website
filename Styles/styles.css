@@ -40,12 +40,15 @@
 body 
 {
    margin: 0px;
+   height: 100vh;
+
    padding: 0px;
    background: #f8ede3 !important;
    width: 100%;
    /* cursor: url(../Media/customPointer.svg), auto;  */
    font-family: 'Pacifico', sans-serif;
    overflow-x: hidden;
+
 }
 ::selection
 {
@@ -56,6 +59,8 @@ body
 {
     text-align: left;
     font-size: 20px;
+    z-index: 3;
+
 }
 
 .landing-headline 
@@ -67,6 +72,7 @@ body
     letter-spacing: -0.5px;
     font-family: 'Poppins', sans-serif;
     color: #091434;
+    z-index: 3;
 
 }
 .navbar-text 
