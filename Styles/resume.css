@@ -8,6 +8,7 @@ body {
 #resume-section {
     padding-left: 90px;
     width: 80%;
+    
 }
 
 #resume-section h1 {
@@ -29,8 +30,37 @@ body {
 
 #background-mouse {
     position: absolute;
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    border-radius: 50%;
+    height: 300px;
+    aspect-ratio: 1;
+    background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    border-radius: 50%;
+    opacity: 50%;
+    left: 50%;
+    top: 50%;
+    translate: -50%, -50%;
+    animation: background-mouse-animation 20s infinite;
+    opacity: 20%;
+    filter: blur(300px);
+
+}
+
+@keyframes background-mouse-animation {
+    from {
+        rotate: 0deg;
+    }
+
+    50% {
+        scale: 1 1.5;
+    }
+    to {
+        rotate: 360deg;
+    }
+  }
+
+  
+/* When its in a phone screen */
+@media screen and (max-width: 1500px) 
+{
+    #background-mouse {
+        display: none;
+    }
 }
