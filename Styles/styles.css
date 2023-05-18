@@ -246,6 +246,18 @@ body
 	background-color: #4c49ea;
 }
 
+
+
+/* The Skill Sections css */
+.hidden {
+    opacity: 0;
+    transition: all 1.4s;
+}
+
+.show-item {
+    opacity: 1;
+}
+
 @media only screen and (max-width: 979px) {
 	.item {
 		-ms-flex-preferred-size: calc(50% - 30px);

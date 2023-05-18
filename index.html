@@ -15,8 +15,6 @@
     <script src="Script/threejsDog.js" defer></script>	
     <script src="Script/app.js" defer></script>
     <script src="Script/skills-list.js" defer></script>
-    <script src="Script/background-hover.js" defer></script>
-
     <link rel="shortcut icon" href="#"> <!-- Fixes the favicon.ico error-->
 </head>
 
@@ -27,7 +25,6 @@
             <span class="website-intro-logo">Wel</span><span class="website-intro-logo">come</span>
         </h1>
     </div> -->
-    <div id="background-mouse"></div>
     <header>
         <!-- Navigation Bar-->
         <nav class="navbar navbar-expand-md navbar-light" id="whole-navbar">    
@@ -60,7 +57,7 @@
     </header>
     <br>
     <section>
-        <div class="container">
+        <div class="container hidden">
             <div class="row">
                 <div class="col-lg">
                     <h1 class="landing-headline">Hi, my name is</h1>
@@ -83,12 +80,12 @@
     </section>                        
     <!-- Start of Projects -->
     <section id="projects">
-        <h4 class="fw-light" style="margin-top: 2%; font-size: 35px; text-align: center;">Projects</h4>
-        <p class="fw-light" style="margin-top: 2%; font-size: 20px; text-align: center;">Click on the card to see the project.</p>
+        <h4 class="fw-light hidden" style="margin-top: 2%; font-size: 35px; text-align: center;">Projects</h4>
+        <p class="fw-light hidden" style="margin-top: 2%; font-size: 20px; text-align: center;">Click on the card to see the project.</p>
         <div class="container">
             <div class="box">
                 <!--Box-->
-                <div class="item">
+                <div class="item hidden">
                     <a href="https://fvtcaitp.org/" target="_blank" class="item_link">
                         <!--Hover bg-->
                         <div class="item_bg"></div>
@@ -97,7 +94,7 @@
                         <p class="item_paragraph">Collaborated with peers to develop, create and test AITP websites using Bootstrap, JavaScript, HTML, and CSS.</p>
                     </a>
                 </div>
-                <div class="item">
+                <div class="item hidden">
                     <a href="https://www.curiosityastronomy.com/" target="_blank" class="item_link">
                         <!--Hover bg-->
                         <div class="item_bg"></div>
@@ -107,7 +104,7 @@
                             experience levels! The website was developed using wix.</p>
                     </a>
                 </div>
-                <div class="item">
+                <div class="item hidden">
                     <a href="https://github.com/BhuwanTiwari2002/BT.MoneyTracker" target="_blank" class="item_link">
                         <div class="item_bg"></div>
                         <h1 class="item_title">Financial Tracker </h1>
@@ -115,7 +112,7 @@
                         The goal of the website is have tags and be able to track where your money is being spend. </p>
                     </a>
                 </div>
-                <div class="item">
+                <div class="item hidden">
                     <a href="https://github.com/BhuwanTiwari2002/Personal-Website" target="_blank" class="item_link">
                         <div class="item_bg"></div>
                         <h1 class="item_title">Personal Website</h1>
@@ -124,7 +121,7 @@
                         </p>
                     </a>
                 </div>
-                <div class="item">
+                <div class="item hidden">
                     <a href="https://github.com/BhuwanTiwari2002/JavaProjects" target="_blank" class="item_link">
                         <div class="item_bg"></div>
                         <h1 class="item_title">Java Projects</h1>
@@ -132,7 +129,7 @@
                             This repository serves as a place for me to develop my skills in a low-stakes, creative environment. </p>
                     </a>
                 </div>
-                <div class="item">
+                <div class="item hidden">
                     <a href="https://github.com/BhuwanTiwari2002" target="_blank" class="item_link">
                         <div class="item_bg"></div>
                         <h1 class="item_title">Github</h1>
@@ -148,12 +145,12 @@
         <div class="text-center">
             <h3 class="fw-light" style="margin-top: 2%; margin-bottom: 2%; font-size: 35px;">Skills</h3>
             <div class="container">
-                <div class="row" id="skill-section-row">
+                <div class="row hidden" id="skill-section-row">
                     <skill-section path="Media/HTML5Icon.png" name="HTML5"></skill-section>
                     <skill-section path="Media/CSS3.png" name="CSS3"></skill-section>
                     <skill-section path="Media/java.png" name="Java"></skill-section>
                 </div>
-                <div class="row" style="margin-top: 4%;">
+                <div class="row hidden" style="margin-top: 4%;">
                     <skill-section path="Media/cSharp.png" name="C Sharp"></skill-section>
                     <skill-section path="Media/github.png" name="Github"></skill-section>
                     <skill-section path="Media/AutoDeskInventor.png" name="AutoDesk Inventor"></skill-section>
@@ -163,8 +160,10 @@
     </section>
     <br>
         <!-- End of Skills -->
-    <section class="photography-section">
+    <section class="photography-section hidden">
         <h3 class="fw-light" style="margin-top: 2%; margin-bottom: 2%; font-size: 35px; text-align: center">Photography</h3>
+        <h3 class="fw-light" style="margin-top: 2%; margin-bottom: 2%; font-size: 20px; text-align: center">Please click and slide right </h3>
+
         <br>
         <div class="photography-image-track" data-mouse-down-at="0" data-prev-percentage="0">
             <img draggable="false" class="photography-image" src="./Media/Photography-Images/SunrisePhoto.jpg" />
@@ -179,14 +178,14 @@
     <div id="contact-page">
         <br>
         <br>
-        <h4 class="fw-light">Contact</h4>
-        <div class="contact-border"></div>
-        <form class="contact-form" action="http://127.0.0.1:8000/contact-form" method="post">
-            <input name="name" class="contact-form-text" placeholder="Name">
-            <input name="email" class="contact-form-text" placeholder="Email">
-            <textarea name="message" class="contact-form-text" placeholder="Message"></textarea>
-            <div class="text-center">
-                <input type="submit" class="form-button" value="Send Message">
+        <h4 class="fw-light hidden">Contact</h4>
+        <div class="contact-border hidden"></div>
+        <form class="contact-form hidden" action="http://127.0.0.1:8000/contact-form" method="post">
+            <input name="name" class="contact-form-text hidden" placeholder="Name">
+            <input name="email" class="contact-form-text hidden" placeholder="Email">
+            <textarea name="message" class="contact-form-text hidden" placeholder="Message"></textarea>
+            <div class="text-center hidden">
+                <input type="submit" class="form-button hidden" value="Send Message">
             </div>
         </form>
     </div>
