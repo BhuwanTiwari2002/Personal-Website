@@ -29,7 +29,8 @@
 
 // Photography Images
 const track = document.querySelector(".photography-image-track");
-const images = track.getElementsByClassName("photography-image");
+// This saves the image into the array instead of trying to go to the dom everytime
+const images = Array.from(track.getElementsByClassName("photography-image"));
 
 /* Creating a function called handleOnDown, that takes an e as a parameter 
 and then goes to the photography-image-track HTML element and then set the mouseDown to 
@@ -93,17 +94,16 @@ function handleMouseDown(event) {
   if (event.buttons !== 1) {
     return;
   }
-  
   // Save the initial cursor position
-  startPos = {x: event.clientX, y: event.clientY};
+  startPos = {x: event.clientX};
 }
 
 function handleMouseUp(event) {
   // Save the end cursor position
-  endPos = {x: event.clientX, y: event.clientY};
+  endPos = {x: event.clientX};
 
   // Check if the user scrolled (moved the mouse significantly while pressing the button)
-  if (Math.abs(startPos.x - endPos.x) > 5 || Math.abs(startPos.y - endPos.y) > 5) {
+  if (Math.abs(startPos.x - endPos.x) > 5) {
     // User scrolled, ignore this event
     return;
   }
@@ -125,14 +125,8 @@ function handleImageClick(event) {
   } else {
     if (currentImage) { // Check if currentImage is not null before trying to access its style property
       // Reset the scale, dimensions and margin of the previously clicked image
-      currentImage.style.transform = "scale(1)";
-      currentImage.style.width = "35vmin";
-      currentImage.style.height = "42vmin";
-      currentImage.style.marginRight = "";  // Reset margin
-      currentImage.style.marginLeft = "";  // Reset margin
-      currentImage.style.transition = "transform 0.5s, width 0.5s, height 0.5s, margin 0.5s"; // Smooth transition animation
+      resetImageStyles(currentImage);
     }
-
     // Increase the size of the clicked image and adjust the margin
     this.style.transform = "scale(1.5)";
     this.style.transition = "transform 0.5s, width 0.5s, height 0.5s, margin 0.5s"; // Smooth transition animation
@@ -147,6 +141,14 @@ function handleImageClick(event) {
   currentImage = (currentImage === this) ? null : this;
   imageClicked = false;
 }
+
+
+
+
+
+
+
+
 
 
 /* Intersection Observer is an API, it provides a mechanism to observe and respond to changes in the visiblity of an element on a web 
