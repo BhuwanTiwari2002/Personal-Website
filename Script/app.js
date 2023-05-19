@@ -116,12 +116,6 @@ function handleImageClick(event) {
 
 
 
-
-
-
-
-
-
 /* Intersection Observer is an API, it provides a mechanism to observe and respond to changes in the visiblity of an element on a web 
 You can use this API to see what is in the users viewport and see when the user is entering or not entering the element relevate to the view
 that the user has
@@ -131,7 +125,6 @@ const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if(entry.isIntersecting) { // This means that the user sees the element 
         entry.target.classList.add('show-item');
-        console.log("Im Here");
     } else {
       entry.target.classList.remove('show-item');
     }

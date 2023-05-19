@@ -7,8 +7,9 @@ body {
 /* Starting the resume styles*/
 #resume-section {
     padding-left: 90px;
-    width: 80%;
-    
+    width: 70%;
+    background: linear-gradient(180deg, rgba(255,255,255,0), rgba(255,255,255,0.20));;
+    margin: auto;
 }
 
 #resume-section h1 {
@@ -25,5 +26,8 @@ body {
 
 #resume-section h4 {
     font-size: 1.2em;
+}
+#background-card {
+  width: 60%;
 }
 
